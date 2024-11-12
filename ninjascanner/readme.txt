@@ -2,19 +2,19 @@
 Contributors: nintechnet, bruandet
 Tags: malware, virus, security, protection, scanner
 Requires at least: 4.7.0
-Tested up to: 6.5
-Stable tag: 3.2.2
+Tested up to: 6.7
+Stable tag: 3.2.3
 License: GPLv3 or later
 Requires PHP: 7.1
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-A lightweight, fast and powerful antivirus scanner for WordPress.
+A lightweight, fast and powerful virus scanner for WordPress.
 
 == Description ==
 
-= A lightweight, fast and powerful antivirus scanner for WordPress. =
+= A lightweight, fast and powerful virus scanner for WordPress. =
 
-NinjaScanner is a lightweight, fast and powerful antivirus scanner for WordPress which includes many features to help you scan your blog for malware and virus.
+NinjaScanner is a lightweight, fast and powerful virus scanner for WordPress which includes many features to help you scan your blog for malware and virus.
 
 = Features =
 
@@ -106,6 +106,10 @@ Check out our [NinjaScanner Premium Edition](https://nintechnet.com/ninjascanner
 9. Integration with NinjaFirewall.
 
 == Changelog ==
+
+= 3.2.3 =
+
+* We have a new API: api.nintechnet.com. Make sure to whitelist this subdomain if you are filtering outgoing connections.
 
 = 3.2.2 =
 

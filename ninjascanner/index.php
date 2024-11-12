@@ -2,17 +2,17 @@
 /*
 Plugin Name: NinjaScanner
 Plugin URI: https://nintechnet.com/ninjascanner/
-Description: A lightweight, fast and powerful antivirus scanner for WordPress.
+Description: A lightweight, fast and powerful virus scanner for WordPress.
 Author: The Ninja Technologies Network
 Author URI: https://nintechnet.com/
-Version: 3.2.2
+Version: 3.2.3
 License: GPLv3 or later
 Network: true
 Text Domain: ninjascanner
 Domain Path: /languages
 */
 
-define('NSCAN_VERSION', '3.2.2');
+define('NSCAN_VERSION', '3.2.3');
 
 /*
  +=====================================================================+
@@ -32,8 +32,7 @@ if (! defined('ABSPATH') ) {
 }
 
 // ===================================================================== 2023-06-07
-$i18n = __('A lightweight, fast and powerful antivirus scanner '.
-		'for WordPress.', 'ninjascanner');
+$i18n = __('A lightweight, fast and powerful virus scanner for WordPress.', 'ninjascanner');
 
 // Both constants are used by NinjaFirewall:
 define('NSCAN_NAME', 'NinjaScanner');

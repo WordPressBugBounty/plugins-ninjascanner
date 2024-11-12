@@ -25,7 +25,7 @@ define( 'NSCAN_LINK_INTEGRITY_CHECK',
 // URLs
 
 // Signatures/checksums download URL:
-define( 'NSCAN_SIGNATURES_URL', 'https://ninjascanner.nintechnet.com/index.php' );
+define('NSCAN_SIGNATURES_URL', 'https://api.nintechnet.com/ninjascanner/signatures');
 
 // WP plugins/themes URL:
 define( 'NSCAN_PLUGINS_URL', 'https://downloads.wordpress.org/plugin/' );
