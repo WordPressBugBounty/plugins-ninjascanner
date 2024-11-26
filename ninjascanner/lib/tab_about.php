@@ -17,6 +17,7 @@ if (! defined('ABSPATH') ) {
 }
 
 echo nscan_display_tabs( 5 );
+$i18n = __('A lightweight, fast and powerful virus scanner for WordPress.', 'ninjascanner');
 ?>
 <br />
 <div class="card">
