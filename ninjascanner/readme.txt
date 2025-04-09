@@ -3,7 +3,7 @@ Contributors: nintechnet, bruandet
 Tags: malware, virus, security, protection, scanner
 Requires at least: 4.7.0
 Tested up to: 6.7
-Stable tag: 3.2.4
+Stable tag: 3.2.5
 License: GPLv3 or later
 Requires PHP: 7.1
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -107,7 +107,14 @@ Check out our [NinjaScanner Premium Edition](https://nintechnet.com/ninjascanner
 
 == Changelog ==
 
+= 3.2.5 =
+
+* The scanner will display an error if it can't decode the list of malware signatures.
+* Updated Prism.js libraries.
+* Small fixes and adjustments.
+
 = 3.2.4 =
+
 * Fixed a potential "Function _load_textdomain_just_in_time was called incorrectly" PHP notice that can occurred with WordPress >=6.7.
 
 = 3.2.3 =

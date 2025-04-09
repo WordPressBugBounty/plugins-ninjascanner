@@ -2117,7 +2117,7 @@ function nscan_setup_antimalware( $lock_status ) {
 	$scan_signatures = array();
 	$scan_signatures = json_decode( $nscan_options['scan_signatures'], true );
 
-	$message = __('Running anti-malware scanner', 'ninjascanner');
+	$message = __('Running malware scanner', 'ninjascanner');
 
 	if (! empty( $scan_signatures ) ) {
 
@@ -2175,7 +2175,7 @@ function nscan_setup_antimalware( $lock_status ) {
 		}
 
 	} else {
-		$message = __('Skipping anti-malware scan', 'ninjascanner');
+		$message = __('Skipping malware scan', 'ninjascanner');
 		nscan_log_info( $message );
 		$snapshot['skip']['scan_antimalware'] = 1;
 		// We want to skip the next step as well
@@ -2220,8 +2220,11 @@ function nscan_run_antimalware( $lock_status ) {
 	}
 
 	$signatures = unserialize( base64_decode( $nscan_temp_sigs ) );
+	if ( empty( $signatures ) ) {
+		nscan_log_error( __('Signatures list is empty', 'ninjascanner') );
+	}
 
-	$message = __('Running anti-malware scanner', 'ninjascanner');
+	$message = __('Running malware scanner', 'ninjascanner');
 	$msg = __('items scanned:', 'ninjascanner');
 
 	if (! empty( $snapshot['tmp']['scanstats'] ) ) {

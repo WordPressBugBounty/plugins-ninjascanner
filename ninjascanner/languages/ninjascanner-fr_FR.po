@@ -4,104 +4,104 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Stable (latest release)\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ninjascanner\n"
-"POT-Creation-Date: 2021-09-28 15:59+0700\n"
-"PO-Revision-Date: 2021-09-28 16:00+0700\n"
+"POT-Creation-Date: 2025-04-09 14:50+0700\n"
+"PO-Revision-Date: 2025-04-09 14:51+0700\n"
 "Last-Translator: NinTechNet <contact@nintechnet.com>\n"
 "Language-Team: NinTechNet <nintechnet.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
-#: index.php:33
-msgid "A lightweight, fast and powerful antivirus scanner for WordPress."
-msgstr "Un scanner antivirus léger, rapide et puissant pour WordPress."
-
-#: index.php:66 index.php:115
+#: index.php:70 index.php:128
 msgid "Your are not allowed to activate or deactivate plugins."
 msgstr "Vous n'êtes pas autorisé à activer ou désactiver les extensions."
 
-#: index.php:72
+#: index.php:77
 #, php-format
 msgid ""
 "NinjaScanner requires WordPress %s or greater but your current version is %s."
 msgstr ""
 "NinjaScanner nécessite au moins WordPress %s mais votre version est %s."
 
-#: index.php:80
+#: index.php:86
 #, php-format
 msgid "NinjaScanner requires PHP %s or greater but your current version is %s."
 msgstr ""
 "NinjaScanner nécessite au moins PHP %s, mais votre version de PHP est %s."
 
-#: index.php:157
+#: index.php:94
+msgid "NinjaScanner is not compatible with Microsoft Windows."
+msgstr "NinjaScanner n'est pas compatible avec Microsoft Windows."
+
+#: index.php:174
 #, php-format
 msgid "Missing or incorrect parameter: %s"
 msgstr "Paramètre incorrect ou manquant : %s"
 
-#: index.php:167
+#: index.php:184
 #, php-format
 msgid "File does not exist: %s"
 msgstr "Le fichier n'existe pas : %s"
 
-#: index.php:174
+#: index.php:191
 #, php-format
 msgid "File cannot be read: %s"
 msgstr "Le fichier n'est pas accessible en lecture : %s"
 
-#: index.php:188
+#: index.php:206
 #, php-format
 msgid "File is not in the ABSPATH or DOCUMENT_ROOT: %s"
 msgstr "Le fichier ne se trouve pas dans le DOCUMENT_ROOT ou ABSPATH: %s"
 
-#: index.php:224
+#: index.php:247
 msgid "A scan is running..."
 msgstr "Un processus d'analyse est en cours..."
 
-#: index.php:230 lib/report_html.php:1009 lib/ui.php:63
+#: index.php:254 lib/report_html.php:1009 lib/ui.php:63
 msgid "Settings"
 msgstr "Réglages"
 
-#: index.php:232
+#: index.php:257
 msgid "Rate it!"
 msgstr "Rate it!"
 
-#: index.php:315
+#: index.php:345
 msgid "The scanning process doesn't seem to be able to start."
 msgstr "Le scan ne semble pas pouvoir démarrer."
 
-#: index.php:317
+#: index.php:348
 msgid "Cancel the scanning process?"
 msgstr "Annuler le processus d'analyse ?"
 
-#: index.php:319
+#: index.php:350
 msgid "Error:"
 msgstr "Erreur :"
 
-#: index.php:321
+#: index.php:352
 msgid "An unknown error occurred."
 msgstr "Une erreur inconnue s'est produite."
 
-#: index.php:323 lib/ajax_hooks.php:82
+#: index.php:354 lib/ajax_hooks.php:84
 msgid "Initialising..."
 msgstr "Initialisation..."
 
-#: index.php:325
+#: index.php:356
 msgid "Step"
 msgstr "Étape"
 
-#: index.php:327 lib/tab_summary.php:145
+#: index.php:358 lib/tab_summary.php:145
 msgid "Please wait..."
 msgstr "Veuillez patienter..."
 
-#: index.php:329
+#: index.php:360
 msgid "The HTTP server returned the following error:"
 msgstr "Le serveur HTTP a retourné le code d'erreur suivant :"
 
-#: index.php:331
+#: index.php:363
 msgid ""
 "If your website is password-protected using HTTP basic authentication, you "
 "can enter your username and password in the \"Settings > Advanced Settings\" "
@@ -111,13 +111,13 @@ msgstr ""
 "nom d'utilisateur et mot de passe dans la section \"Réglages > Paramètres "
 "Utilisateurs Avancés > Authentification de base HTTP\"."
 
-#: index.php:333
+#: index.php:367
 msgid "No problem detected. To refresh the list, run a new scan."
 msgstr ""
 "Aucun problème détecté. Pour actualiser la liste, lancez une nouvelle "
 "analyse."
 
-#: index.php:335
+#: index.php:370
 msgid ""
 "Enabling this option could slow down the scanning process on low resource "
 "servers. Continue?"
@@ -125,45 +125,45 @@ msgstr ""
 "L'activation de cette option pourrait ralentir le processus d'analyse sur "
 "les serveurs à faibles ressources. Continuer ?"
 
-#: index.php:337
+#: index.php:373
 msgid "All fields will be restored to their default values. Continue?"
 msgstr ""
 "Tous les champs vont être réinitialisés avec leur valeur par défaut. "
 "Continuer ?"
 
-#: index.php:339
+#: index.php:376
 msgid "No records were found that match the specified search criteria."
 msgstr "Aucune donnée ne correspond aux critères de recherche spécifiés."
 
-#: index.php:341
+#: index.php:379
 msgid "Run the garbage collector now to clear all cached files?"
 msgstr "Lancer le ramasse-miettes maintenant pour vider le cache ?"
 
-#: index.php:343
+#: index.php:382
 msgid "Unknown action."
 msgstr "Action inconnue."
 
-#: index.php:345
+#: index.php:384
 msgid "No file selected."
 msgstr "Aucun fichier sélectionné."
 
-#: index.php:347
+#: index.php:386
 msgid "Permanently delete the selected files?"
 msgstr "Supprimer définitivement le fichier sélectionné ?"
 
-#: index.php:349
+#: index.php:389
 msgid "Restore the selected files to their original folder?"
 msgstr "Récupérer le fichier et le placer dans son répertoire initial ?"
 
-#: index.php:351 lib/ajax_hooks.php:265
+#: index.php:392 lib/ajax_hooks.php:275
 msgid "Please enter your API key."
 msgstr "Entrez votre clé API."
 
-#: index.php:353
+#: index.php:394
 msgid "Your API key is valid."
 msgstr "Votre clé API est valide."
 
-#: index.php:390 lib/cli.php:54 lib/cli.php:153
+#: index.php:435 lib/cli.php:54 lib/cli.php:153
 msgid "A scanning process is running. Please wait or stop it."
 msgstr "Un processus d'analyse est en cours. Veuillez patienter ou l'arrêter."
 
@@ -179,52 +179,52 @@ msgstr "Erreur d'analyse."
 msgid "Scan terminated"
 msgstr "Analyse terminée"
 
-#: lib/ajax_hooks.php:30 lib/utils.php:285
+#: lib/ajax_hooks.php:32 lib/utils.php:319
 msgid "Keys match."
 msgstr "Les nonces correspondent."
 
-#: lib/ajax_hooks.php:38 lib/ajax_hooks.php:221 lib/ajax_hooks.php:241
+#: lib/ajax_hooks.php:40 lib/ajax_hooks.php:227 lib/ajax_hooks.php:249
 msgid "Not allowed."
 msgstr "Interdit."
 
-#: lib/ajax_hooks.php:62 lib/ajax_hooks.php:201
+#: lib/ajax_hooks.php:64 lib/ajax_hooks.php:205
 msgid "Nonce keys do not match. Try to reload this page."
 msgstr ""
 "Les nonces de sécurité ne correspondent pas. Essayez de recharger cette page."
 
-#: lib/ajax_hooks.php:151
+#: lib/ajax_hooks.php:153
 #, php-format
 msgid "Fatal error: forking process failed (%s: %s). Aborting"
 msgstr ""
 "Erreur fatale : Le processus d'analyse n'a pas pu s'exécuter en arrière-plan "
 "(%s: %s). Abandon"
 
-#: lib/ajax_hooks.php:161
+#: lib/ajax_hooks.php:163
 #, php-format
 msgid "Fatal error: the HTTP server returns a [%s %s] HTTP code. Aborting"
 msgstr "Erreur fatale : le serveur HTTP a retourné un code [%s %s]. Abandon"
 
-#: lib/ajax_hooks.php:260 lib/ajax_hooks.php:326 lib/ajax_hooks.php:360
-#: lib/ajax_hooks.php:388
+#: lib/ajax_hooks.php:270 lib/ajax_hooks.php:338 lib/ajax_hooks.php:374
+#: lib/ajax_hooks.php:404
 msgid "Error: Security nonces do not match. Reload the page and try again."
 msgstr ""
 "Erreur : Les nonces de sécurité ne correspondent pas. Veuillez recharger "
 "cette page."
 
-#: lib/ajax_hooks.php:301
+#: lib/ajax_hooks.php:311
 #, php-format
 msgid "Error: %s"
 msgstr "Erreur : %s"
 
-#: lib/ajax_hooks.php:312 lib/utils.php:108
+#: lib/ajax_hooks.php:322 lib/utils.php:118
 msgid "Unknown error."
 msgstr "Erreur inconnue."
 
-#: lib/ajax_hooks.php:344
+#: lib/ajax_hooks.php:356
 msgid "Error: Cannot quarantine the file."
 msgstr "Erreur : Impossible de placer le fichier en quarantaine."
 
-#: lib/ajax_hooks.php:396
+#: lib/ajax_hooks.php:412
 msgid "Error: File does not exist."
 msgstr "Erreur : Le fichier n'existe pas."
 
@@ -289,11 +289,11 @@ msgstr "Est-ce que NinjaScanner est lancé ?"
 msgid "NinjaScanner's log is empty."
 msgstr "Le journal est vide."
 
-#: lib/cli.php:192 lib/report_html.php:1228
+#: lib/cli.php:192 lib/report_html.php:1228 lib/tab_log.php:99
 msgid "Error"
 msgstr "Erreur"
 
-#: lib/cli.php:193
+#: lib/cli.php:193 lib/tab_log.php:94
 msgid "Warning"
 msgstr "Attention"
 
@@ -306,7 +306,7 @@ msgstr "Visualisation de %s"
 msgid "Enter your license:"
 msgstr "Entrez votre licence :"
 
-#: lib/cli.php:237 lib/utils.php:440
+#: lib/cli.php:237 lib/utils.php:471
 msgid "Your license has been accepted and saved."
 msgstr "Votre licence a été acceptée et sauvegardée."
 
@@ -403,7 +403,7 @@ msgstr "Ces deux fichiers ont des fins de ligne différentes (LF vs CRLF)."
 msgid "Error: This file is not writable and therefore it cannot be moved."
 msgstr "Erreur : Ce fichier est en lecture seule, il ne peut pas être déplacé."
 
-#: lib/file_quarantine.php:48
+#: lib/file_quarantine.php:50
 #, php-format
 msgid ""
 "NinjaScanner detected that removing this file seemed to crash your blog. %s"
@@ -411,7 +411,7 @@ msgstr ""
 "NinjaScanner a détecté que la suppression de ce fichier semble planter votre "
 "blog. %s"
 
-#: lib/file_quarantine.php:50
+#: lib/file_quarantine.php:52
 msgid ""
 "If you want to ignore this message and quarantine the file anyway, please "
 "disable the \"Sandbox\" option from the \"Settings > Advanced Users Settings "
@@ -421,30 +421,30 @@ msgstr ""
 "le fichier, désactivez l'option \"Sandbox\" dans la page \"Règlages > "
 "Paramètres Utilisateurs Avancés > Paramètres pour les Nerds\"."
 
-#: lib/file_quarantine.php:74
+#: lib/file_quarantine.php:76
 #, php-format
 msgid "The website back-end returned: HTTP %s %s."
 msgstr "Le back-end du site a retourné : HTTP %s %s."
 
-#: lib/file_quarantine.php:87
+#: lib/file_quarantine.php:89
 msgid "The website back-end returned: Cannot find the placeholder in the page."
 msgstr "Le back-end du site a retourné : Placeholder error."
 
-#: lib/file_quarantine.php:95
+#: lib/file_quarantine.php:97
 #, php-format
 msgid "The website back-end returned a fatal error: %s."
 msgstr "Le back-end du site a retourné une erreur fatale : %s."
 
-#: lib/file_quarantine.php:118
+#: lib/file_quarantine.php:122
 #, php-format
 msgid "The website front-end returned: HTTP %s %s."
 msgstr "La page d'accueil du site a retourné : HTTP %s %s."
 
-#: lib/file_quarantine.php:129
+#: lib/file_quarantine.php:133
 msgid "The website front-end did not return the expected page."
 msgstr "Le site n'a pas renvoyé la page attendue."
 
-#: lib/file_quarantine.php:138
+#: lib/file_quarantine.php:142
 #, php-format
 msgid "The website front-end returned a fatal error: %s."
 msgstr "La page d'accueil du site a retourné une erreur fatale : %s."
@@ -466,29 +466,25 @@ msgid "Error: Cannot download the original file from wordpress.org."
 msgstr ""
 "Erreur : Impossible de télécharger le fichier original sur wordpress.org."
 
-#: lib/file_view.php:24
+#: lib/file_view.php:26
 msgid "File is empty."
 msgstr "Le fichier est vide."
 
-#: lib/file_view.php:31
+#: lib/file_view.php:33
 #, php-format
 msgid "Cannot open file: %s"
 msgstr "Impossible d'ouvrir le fichier : %s"
 
-#: lib/file_view.php:66
-msgid "Viewing:"
-msgstr "Fichier :"
-
-#: lib/file_view.php:76
+#: lib/file_view.php:82
 #, php-format
 msgid "Suspicious code is %shighlighted%s."
 msgstr "Le code suspect est %ssurligné%s."
 
-#: lib/file_view.php:188
+#: lib/file_view.php:194
 msgid "This is a binary file and it cannot be viewed."
 msgstr "Ce fichier est binaire, il ne peut pas être visualisé."
 
-#: lib/file_view.php:197
+#: lib/file_view.php:203
 msgid "This is a directory and it cannot be viewed."
 msgstr "Ceci est un répertoire, il ne peut pas être visualisé."
 
@@ -599,7 +595,7 @@ msgstr ""
 "s'agir d'une chaîne complète ou partielle, sensible à la casse (<code>/foo/"
 "bar.php</code> ou simplement <code>foo</code>)."
 
-#: lib/help.php:57 lib/tab_settings.php:203
+#: lib/help.php:57
 msgid ""
 "Apply the exclusion list to the file integrity checker (themes and plugins)"
 msgstr ""
@@ -1153,7 +1149,7 @@ msgstr "Dépannage"
 msgid "Please consult this article: %s."
 msgstr "Consultez notre blog : %s."
 
-#: lib/report_email.php:26 lib/utils.php:469
+#: lib/report_email.php:26 lib/utils.php:500
 msgid "Help Desk (Premium customers only):"
 msgstr "Support technique (clients Premium uniquement) :"
 
@@ -1176,7 +1172,7 @@ msgid "A fatal error occurred while attempting to generate the report: \"%s\""
 msgstr ""
 "Une erreur fatale s'est produite lors de la création du rapport : \"%s\""
 
-#: lib/report_email.php:41 lib/utils.php:467
+#: lib/report_email.php:41 lib/utils.php:498
 msgid "More details may be available in the scanner log."
 msgstr "Consultez le fichier journal du scanner pour plus de détails."
 
@@ -1399,13 +1395,13 @@ msgstr "Aucun pare-feu détecté."
 #: lib/report_html.php:1114
 #, php-format
 msgid ""
-"Consider installing a Web Application Firewall such as <a href=\"%s"
-"\">NinjaFirewall (WP Edition)</a> to make sure that your site is well "
-"protected against web attacks."
+"Consider installing a Web Application Firewall such as <a "
+"href=\"%s\">NinjaFirewall (WP Edition)</a> to make sure that your site is "
+"well protected against web attacks."
 msgstr ""
-"Envisagez l'installation d'un pare-feu applicatif comme <a href=\"%s"
-"\">NinjaFirewall (WP Edition)</a> pour bien protéger votre site contre les "
-"attaques Web."
+"Envisagez l'installation d'un pare-feu applicatif comme <a "
+"href=\"%s\">NinjaFirewall (WP Edition)</a> pour bien protéger votre site "
+"contre les attaques Web."
 
 #: lib/report_html.php:1122 lib/report_html.php:1131
 msgid "Web Application Firewall"
@@ -1584,8 +1580,8 @@ msgid "Modify:"
 msgstr "Modification:"
 
 #: lib/report_html.php:1594
-msgid "Access:"
-msgstr "Accès:"
+msgid "Permissions:"
+msgstr "Permissions :"
 
 #: lib/report_html.php:1595
 msgid "UID / GID:"
@@ -1629,8 +1625,8 @@ msgstr ""
 #: lib/report_html.php:1765
 #, php-format
 msgid ""
-"This file is from an unknown package. If it is a premium plugin, <a href=\"%s"
-"\">consult our blog</a> to learn how you can include it in the file "
+"This file is from an unknown package. If it is a premium plugin, <a "
+"href=\"%s\">consult our blog</a> to learn how you can include it in the file "
 "integrity checker."
 msgstr ""
 "Ce fichier provient d'un paquet inconnu. Si c'est une extension Premium, <a "
@@ -1662,13 +1658,13 @@ msgstr ""
 #: lib/report_html.php:1952
 #, php-format
 msgid ""
-"This file is from an unknown package. If it is a premium theme, <a href=\"%s"
-"\">consult our blog</a> to learn how you can include it in the file "
+"This file is from an unknown package. If it is a premium theme, <a "
+"href=\"%s\">consult our blog</a> to learn how you can include it in the file "
 "integrity checker."
 msgstr ""
-"Ce fichier provient d'un paquet inconnu. Si c'est un thème Premium, <a href="
-"\"%s\">consultez notre blog</a> pour voir comment l'inclure dans le contrôle "
-"d'intégrité des fichiers."
+"Ce fichier provient d'un paquet inconnu. Si c'est un thème Premium, <a "
+"href=\"%s\">consultez notre blog</a> pour voir comment l'inclure dans le "
+"contrôle d'intégrité des fichiers."
 
 #: lib/report_html.php:2016
 msgid "This file is a hidden PHP script."
@@ -1771,7 +1767,7 @@ msgid "No problem detected"
 msgstr "Aucun problème détecté"
 
 #: lib/report_text.php:110 lib/report_text.php:206 lib/report_text.php:330
-#: lib/scan.php:521 lib/scan.php:1258 lib/scan.php:1501
+#: lib/scan.php:538 lib/scan.php:1320 lib/scan.php:1563
 #, php-format
 msgid "Additional/suspicious files: %s"
 msgstr "Fichiers ajoutés ou suspects : %s"
@@ -2203,55 +2199,55 @@ msgstr "Valeur manquante (%s). Arrêt du processus d'analyse"
 msgid "Fatal error: Snapshot seems to be corrupted."
 msgstr "Erreur : Le fichier de l'instantané est corrompu."
 
-#: lib/scan.php:63
+#: lib/scan.php:73
 #, php-format
 msgid "Processing step %s/%s"
 msgstr "Traitement de l'étape %s/%s"
 
-#: lib/scan.php:78
+#: lib/scan.php:88
 #, php-format
 msgid "Fatal error: process returned %s (%s)."
 msgstr "Erreur fatale : Le processus d'analyse a retourné %s (%s)."
 
-#: lib/scan.php:111
+#: lib/scan.php:121
 msgid "Exiting scanning process"
 msgstr "Arrêt du processus d'analyse"
 
-#: lib/scan.php:140
+#: lib/scan.php:150
 #, php-format
 msgid "Error: E_ERROR (%s - line %s in %s)"
 msgstr "Erreur : E_ERROR (%s - ligne %s dans %s)"
 
-#: lib/scan.php:157
+#: lib/scan.php:167
 msgid "Scan error"
 msgstr "Erreur d'analyse"
 
-#: lib/scan.php:158
+#: lib/scan.php:168
 msgid "An fatal error occurred during the scan:"
 msgstr "Une erreur fatale s'est produite lors de l'analyse :"
 
-#: lib/scan.php:160
+#: lib/scan.php:170
 msgid "Blog:"
 msgstr "Blog :"
 
-#: lib/scan.php:161
+#: lib/scan.php:171
 msgid "Date:"
 msgstr "Date :"
 
-#: lib/scan.php:181
+#: lib/scan.php:191
 msgid "Skipping NinjaScanner files integrity check"
 msgstr ""
 "Annulation de la vérification de l'intégrité des fichiers de NinjaScanner"
 
-#: lib/scan.php:192
+#: lib/scan.php:202
 msgid "Checking NinjaScanner files integrity"
 msgstr "Vérification de l'intégrité des fichiers de NinjaScanner"
 
-#: lib/scan.php:201 lib/scan.php:517
+#: lib/scan.php:211 lib/scan.php:534
 msgid "Files integrity is O.K"
 msgstr "L'intégrité des fichiers est OK"
 
-#: lib/scan.php:209 lib/scan.php:1645
+#: lib/scan.php:219 lib/scan.php:1707
 msgid ""
 "Fatal error: NinjaScanner files integrity check: Decoded hashes seem "
 "corrupted. Aborting."
@@ -2259,51 +2255,51 @@ msgstr ""
 "Erreur fatale : Contrôle de l'intégrité des fichiers de NinjaScanner : Les "
 "hachages semblent corrompus. Abandon."
 
-#: lib/scan.php:217
+#: lib/scan.php:227
 msgid "Clearing 'scan_ninjaintegrity', we'll check the plugin again later"
 msgstr "Reinitialisation de 'scan_ninjaintegrity', on le vérifiera plus tard"
 
-#: lib/scan.php:252
+#: lib/scan.php:262
 msgid "Building file's list"
 msgstr "Création de la liste des fichiers"
 
-#: lib/scan.php:291
+#: lib/scan.php:301
 msgid ""
 "Fatal error: No file found. Check your NinjaScanner configuration. Aborting."
 msgstr ""
 "Erreur fatale : Aucun fichier trouvé. Veuillez vérifier votre configuration. "
 "Abandon."
 
-#: lib/scan.php:304
+#: lib/scan.php:314
 #, php-format
 msgid "Total files found: %s"
 msgstr "Nombre total de fichiers trouvés : %s"
 
-#: lib/scan.php:310
+#: lib/scan.php:320
 #, php-format
 msgid "Symlinks found: %s"
 msgstr "Liens symboliques : %s"
 
-#: lib/scan.php:320
+#: lib/scan.php:330
 #, php-format
 msgid "Unreadable files found: %s"
 msgstr "Fichiers non accessibles en lecture : %s"
 
-#: lib/scan.php:330
+#: lib/scan.php:340
 #, php-format
 msgid "Hidden scripts found: %s"
 msgstr "Fichiers cachés : %s"
 
-#: lib/scan.php:341
+#: lib/scan.php:351
 msgid "Building database posts and pages checksum"
 msgstr "Création du hachage pour les articles et pages de la DB"
 
-#: lib/scan.php:367
+#: lib/scan.php:377
 #, php-format
 msgid "Found %s posts and %s pages in the database"
 msgstr "%s articles et %s pages trouvé dans la base de données"
 
-#: lib/scan.php:491
+#: lib/scan.php:508
 #, php-format
 msgid ""
 "Process executed in %s seconds and used %s MB of memory (NinjaScanner "
@@ -2312,243 +2308,248 @@ msgstr ""
 "Processus exécuté en %s secondes et a utilisé %s Mo de mémoire (mémoire "
 "additionnelle pour NinjaScanner : %s Mo)."
 
-#: lib/scan.php:508
+#: lib/scan.php:525
 msgid "Checking WordPress core files integrity"
 msgstr "Vérification de l'intégrité des fichiers de WordPress"
 
-#: lib/scan.php:528
+#: lib/scan.php:545
 msgid "Skipping WordPress core files integrity check"
 msgstr "Annulation de la vérification de l'intégrité des fichiers de WordPress"
 
-#: lib/scan.php:573
+#: lib/scan.php:590
 #, php-format
 msgid "Downloading %s from wordpress.org"
 msgstr "Téléchargement de %s depuis wordpress.org"
 
-#: lib/scan.php:596 lib/scan.php:1635
+#: lib/scan.php:613 lib/scan.php:1697
 #, php-format
 msgid "%s. Skipping this step"
 msgstr "%s. Annulation de cette étape"
 
-#: lib/scan.php:609
+#: lib/scan.php:626
 #, php-format
 msgid "HTTP Error %s. Skipping this step, you may try again later"
 msgstr ""
 "Erreur HTTP %s. Annulation de cette opération. Veuillez réessayer plus tard"
 
-#: lib/scan.php:618
+#: lib/scan.php:635
 #, php-format
 msgid "Using local cached copy (%s)"
 msgstr "Utilisation de la copie locale (%s)"
 
-#: lib/scan.php:625
+#: lib/scan.php:642
 msgid "Unable to retrieve ZIP files list. Skipping this step"
 msgstr ""
 "Impossible de récupérer la liste des fichiers de l'archive ZIP. Annulation "
 "de cette étape"
 
-#: lib/scan.php:631
+#: lib/scan.php:648
 msgid "Checking WordPress files integrity"
 msgstr "Vérification de l'intégrité des fichiers de WordPress"
 
-#: lib/scan.php:641
+#: lib/scan.php:658
 msgid "Unable to extract ZIP archive. Skipping this step"
 msgstr "Impossible d'extraire l'archive ZIP. Annulation de cette étape"
 
-#: lib/scan.php:655 lib/scan.php:1209 lib/scan.php:1453
+#: lib/scan.php:672 lib/scan.php:1271 lib/scan.php:1515
 #, php-format
 msgid "Using %s algo"
 msgstr "Utilisation de l'algorithme %s"
 
-#: lib/scan.php:685 lib/scan.php:1224 lib/scan.php:1467 lib/scan.php:1666
+#: lib/scan.php:702 lib/scan.php:1286 lib/scan.php:1529 lib/scan.php:1728
 #, php-format
 msgid "Checksum mismatch: %s"
 msgstr "La somme de contrôle ne correspond pas : %s"
 
-#: lib/scan.php:707
+#: lib/scan.php:732 lib/scan.php:1141 lib/scan.php:1396 lib/scan.php:1794
+msgid "Creating files/folders exclusion list"
+msgstr "Création de la liste d'exclusion de fichiers et dossiers"
+
+#: lib/scan.php:742 lib/scan.php:753
+#, php-format
+msgid "Ignoring unknown file, it is in the exclusion list: %s"
+msgstr "Ignore le fichier inconnu, il est dans la liste des exclusions: %s"
+
+#: lib/scan.php:763
 #, php-format
 msgid "Total modified core files: %s"
 msgstr "Nombre de fichiers modifiés : %s"
 
-#: lib/scan.php:721
+#: lib/scan.php:777
 msgid "Building files list from ZIP archive"
 msgstr "Création de la liste des fichiers à partir de l'archive ZIP"
 
-#: lib/scan.php:746 lib/scan.php:788
+#: lib/scan.php:802 lib/scan.php:844
 msgid "Files list is empty. Skipping this archive"
 msgstr "La liste de fichiers est vide. Annulation de cette opération"
 
-#: lib/scan.php:754 lib/scan.php:770
+#: lib/scan.php:810 lib/scan.php:826
 #, php-format
 msgid "Unable to open ZIP archive (error code: %s)"
 msgstr "Impossible d'ouvrir l'archive ZIP (code d'erreur : %s)"
 
-#: lib/scan.php:809
+#: lib/scan.php:865
 #, php-format
 msgid "Cannot create folder %s. Is your filesystem read-only?"
 msgstr ""
 "Impossible de créer le répertoire %s. Votre système de fichiers est-il en "
 "lecture seule ?"
 
-#: lib/scan.php:835
+#: lib/scan.php:891
 #, php-format
 msgid "Unable to extract ZIP archive (error code: %s)"
 msgstr "Impossible d'extraire l'archive ZIP (code d'erreur : %s)"
 
-#: lib/scan.php:854
+#: lib/scan.php:910
 msgid "Checking Google Safe Browsing"
 msgstr "Vérification Google Safe Browsing"
 
-#: lib/scan.php:890
+#: lib/scan.php:946
 #, php-format
 msgid "Total URL to check: %s"
 msgstr "Nombre total d'URL à vérifier : %s"
 
-#: lib/scan.php:942
+#: lib/scan.php:998
 #, php-format
 msgid "Total blacklisted URL: %s"
 msgstr "Nombre total d'URL sur la liste noire : %s"
 
-#: lib/scan.php:950
+#: lib/scan.php:1006
 #, php-format
 msgid "%s. Cannot check Google Safe Browsing. Try again later"
 msgstr ""
 "%s. Impossible de vérifier Google Safe Browsing. Veuillez recommencer plus "
 "tard"
 
-#: lib/scan.php:958
+#: lib/scan.php:1014
 msgid "Skipping Google Safe Browsing: no API key found"
 msgstr ""
 "Annulation de la vérification Google Safe Browsing: aucune clé API trouvée"
 
-#: lib/scan.php:985
+#: lib/scan.php:1041
 msgid "Building plugins list"
 msgstr "Création de la liste des extensions"
 
-#: lib/scan.php:1011
+#: lib/scan.php:1067
 #, php-format
 msgid "Additional/suspicious plugin: %s %s (%s)"
 msgstr "Nombre de fichiers ajoutés ou suspects : %s %s (%s)"
 
-#: lib/scan.php:1042
+#: lib/scan.php:1104
 #, php-format
 msgid "mu-plugin found: %s %s (%s)"
 msgstr "Extensions mu-plugin trouvées : %s %s (%s)"
 
-#: lib/scan.php:1059
+#: lib/scan.php:1121
 msgid "No plugins found"
 msgstr "Aucune extension trouvée"
 
-#: lib/scan.php:1064
+#: lib/scan.php:1126
 #, php-format
 msgid "Total plugins found: %s"
 msgstr "Nombre d'extensions trouvées : %s"
 
-#: lib/scan.php:1079 lib/scan.php:1334 lib/scan.php:1732
-msgid "Creating files/folders exclusion list"
-msgstr "Création de la liste d'exclusion de fichiers et dossiers"
-
-#: lib/scan.php:1087
+#: lib/scan.php:1149
 msgid "Skipping plugin files integrity check"
 msgstr "Annulation de la vérification de l'intégrité des extensions"
 
-#: lib/scan.php:1115
+#: lib/scan.php:1177
 msgid "Checking plugin files integrity"
 msgstr "Vérification de l'intégrité des extensions"
 
-#: lib/scan.php:1156
+#: lib/scan.php:1218
 msgid "Ignoring NinjaScanner, its integrity was checked already"
 msgstr ""
 "Annulation de la vérification de l'intégrité des fichiers de NinjaScanner "
 "(déjà fait)"
 
-#: lib/scan.php:1163 lib/scan.php:1411
+#: lib/scan.php:1225 lib/scan.php:1473
 msgid "Using user-uploaded local copy"
 msgstr "Utilisation de la copie locale téléchargée par l'utilisateur"
 
-#: lib/scan.php:1168 lib/scan.php:1416 lib/scan.php:2307
+#: lib/scan.php:1230 lib/scan.php:1478 lib/scan.php:2370
 msgid "Using local copy"
 msgstr "Utilisation de la copie locale"
 
-#: lib/scan.php:1172 lib/scan.php:1420
+#: lib/scan.php:1234 lib/scan.php:1482
 msgid "Attempting to download it from wordpress.org"
 msgstr "Téléchargement depuis wordpress.org"
 
-#: lib/scan.php:1176
+#: lib/scan.php:1238
 msgid "Not found. Attempting to download it from the trunk folder instead"
 msgstr ""
 "Fichier non trouvé. Tentative de téléchargement depuis le dossier \"trunk\" "
 "du plugin"
 
-#: lib/scan.php:1265
+#: lib/scan.php:1327
 #, php-format
 msgid "Total modified plugin files: %s"
 msgstr "Nombre de fichiers d'extension modifiés : %s"
 
-#: lib/scan.php:1270
+#: lib/scan.php:1332
 msgid "Plugin files integrity is O.K"
 msgstr "L'intégrité des extensions est OK"
 
-#: lib/scan.php:1293
+#: lib/scan.php:1355
 msgid "Building themes list"
 msgstr "Création de la liste des thèmes"
 
-#: lib/scan.php:1313
+#: lib/scan.php:1375
 msgid "No themes found"
 msgstr "Aucune thème trouvé"
 
-#: lib/scan.php:1318
+#: lib/scan.php:1380
 #, php-format
 msgid "Total themes found: %s"
 msgstr "Nombre de thèmes trouvés : %s"
 
-#: lib/scan.php:1341
+#: lib/scan.php:1403
 msgid "Skipping theme files integrity check"
 msgstr "Annulation de la vérification de l'intégrité des thèmes"
 
-#: lib/scan.php:1369
+#: lib/scan.php:1431
 msgid "Checking theme files integrity"
 msgstr "Vérification de l'intégrité des thèmes"
 
-#: lib/scan.php:1508
+#: lib/scan.php:1570
 #, php-format
 msgid "Total modified theme files: %s"
 msgstr "Nombre de fichiers de thème modifiés : %s"
 
-#: lib/scan.php:1513
+#: lib/scan.php:1575
 msgid "Theme files integrity is O.K"
 msgstr "L'intégrité des fichiers est OK"
 
-#: lib/scan.php:1575
+#: lib/scan.php:1637
 #, php-format
 msgid "HTTP Error %s. Skipping %s %s, it may not be available in the repo"
 msgstr ""
 "Erreur HTTP %s. Annulation, %s %s n'est peut être pas disponible dans le "
 "dépôt"
 
-#: lib/scan.php:1586
+#: lib/scan.php:1648
 #, php-format
 msgid "%s. Skipping it. You may try again later"
 msgstr "%s. Annulation de cette opération. Veuillez réessayer plus tard"
 
-#: lib/scan.php:1606
+#: lib/scan.php:1668
 msgid "Using local cached version of checksums"
 msgstr "Utilisation de la version locale (cache) des sommes de contrôle"
 
-#: lib/scan.php:1610
+#: lib/scan.php:1672
 msgid "Decoded hashes seem corrupted. Deleting local cached version"
 msgstr "Les hachages semblent corrompus. Suppression le la version locale"
 
-#: lib/scan.php:1622
+#: lib/scan.php:1684
 msgid "Downloading checksums"
 msgstr "Téléchargement des sommes de contrôle"
 
-#: lib/scan.php:1673
+#: lib/scan.php:1735
 #, php-format
 msgid "Missing file: %s"
 msgstr "Fichier manquant : %s"
 
-#: lib/scan.php:1680
+#: lib/scan.php:1742
 #, php-format
 msgid ""
 "Fatal error: Some NinjaScanner files have been modified (%s) or are missing "
@@ -2559,176 +2560,180 @@ msgstr ""
 "sont manquants (%s). Veuillez réinstaller NinjaScanner ou désactiver "
 "l'option de contrôle de l'intégrité des fichiers de NinjaScanner. Abandon."
 
-#: lib/scan.php:1705
+#: lib/scan.php:1767
 msgid "Checking user-defined exclusion lists"
 msgstr "Vérification des listes d'exclusion définies par l'utilisateur"
 
-#: lib/scan.php:1718
+#: lib/scan.php:1780
 msgid "Creating extensions exclusion list"
 msgstr "Création de la liste d'exclusion des extensions"
 
-#: lib/scan.php:1742
+#: lib/scan.php:1804
 #, php-format
 msgid "Limiting search to files smaller than %s bytes"
 msgstr "Limitation de la recherche aux fichiers inférieurs à %s octets"
 
-#: lib/scan.php:1783
+#: lib/scan.php:1845
 #, php-format
 msgid "Files ignored based on user-defined exclusion lists: %s"
 msgstr ""
 "Fichiers ignorés en fonction des listes d'exclusion définies par "
 "l'utilisateur : %s"
 
-#: lib/scan.php:1802
+#: lib/scan.php:1864
 msgid "Comparing previous and current file snapshots"
 msgstr "Comparaison de l'instantané de fichiers précédent avec l'actuel"
 
-#: lib/scan.php:1805
+#: lib/scan.php:1867
 msgid "Skipping snapshots comparison, no older files shapshot found"
 msgstr "Annulation de la comparaison, pas d'ancien instantané trouvé"
 
-#: lib/scan.php:1820 lib/scan.php:1918
+#: lib/scan.php:1882 lib/scan.php:1980
 msgid "Old snapshot file seems corrupted. Skipping this step"
 msgstr "L'ancien instantané semble corrompu. Annulation de cette étape"
 
-#: lib/scan.php:1853
+#: lib/scan.php:1915
 #, php-format
 msgid "Total additional files: %s"
 msgstr "Nombre de fichiers ajoutés : %s"
 
-#: lib/scan.php:1859
+#: lib/scan.php:1921
 #, php-format
 msgid "Total modified files: %s"
 msgstr "Nombre de fichiers modifiés : %s"
 
-#: lib/scan.php:1865
+#: lib/scan.php:1927
 #, php-format
 msgid "Total deleted files: %s"
 msgstr "Nombre de fichiers supprimés : %s"
 
-#: lib/scan.php:1871 lib/scan.php:2015
+#: lib/scan.php:1933 lib/scan.php:2077
 msgid "Previous and current snapshots match"
 msgstr "L'actuel et le précédent instantanés  correspondent"
 
-#: lib/scan.php:1875 lib/scan.php:2019
+#: lib/scan.php:1937 lib/scan.php:2081
 msgid "Skipping snapshots comparison"
 msgstr "Annulation de la comparaison des instantanés"
 
-#: lib/scan.php:1901
+#: lib/scan.php:1963
 msgid "Comparing previous and current database snapshots"
 msgstr "Comparaison de l'instantané de fichiers précédent avec l'actuel"
 
-#: lib/scan.php:1904 lib/scan.php:1922
+#: lib/scan.php:1966 lib/scan.php:1984
 msgid "Skipping snapshots comparison, no older database shapshot found"
 msgstr "Annulation de la comparaison, pas d'ancien instantané trouvé"
 
-#: lib/scan.php:1954
+#: lib/scan.php:2016
 #, php-format
 msgid "Total additional posts: %s"
 msgstr "Nombre d'articles ajoutés : %s"
 
-#: lib/scan.php:1960
+#: lib/scan.php:2022
 #, php-format
 msgid "Total modified posts: %s"
 msgstr "Nombre d'articles modifiés : %s"
 
-#: lib/scan.php:1966
+#: lib/scan.php:2028
 #, php-format
 msgid "Total deleted posts: %s"
 msgstr "Nombre d'articles supprimés : %s"
 
-#: lib/scan.php:1997
+#: lib/scan.php:2059
 #, php-format
 msgid "Total additional pages: %s"
 msgstr "Nombre de pages ajoutées : %s"
 
-#: lib/scan.php:2003
+#: lib/scan.php:2065
 #, php-format
 msgid "Total modified pages: %s"
 msgstr "Nombre de pages modifiées : %s"
 
-#: lib/scan.php:2009
+#: lib/scan.php:2071
 #, php-format
 msgid "Total deleted pages: %s"
 msgstr "Nombre de pages supprimées : %s"
 
-#: lib/scan.php:2058 lib/scan.php:2162
-msgid "Running anti-malware scanner"
-msgstr "Exécution du scanner anti-malware"
+#: lib/scan.php:2120 lib/scan.php:2225
+msgid "Running malware scanner"
+msgstr "Exécution du scanner de malware"
 
-#: lib/scan.php:2070
+#: lib/scan.php:2132
 msgid "Building the list of files to check"
 msgstr "Création de la liste des fichiers"
 
-#: lib/scan.php:2078
+#: lib/scan.php:2140
 msgid "Retrieving signatures lists"
 msgstr "Récupération des listes de signatures"
 
-#: lib/scan.php:2093
+#: lib/scan.php:2155
 #, php-format
 msgid "Checking user-defined signatures list (%s)"
 msgstr ""
 "Vérification de la liste des signatures fournies par l'utilisateur (%s)"
 
-#: lib/scan.php:2109 lib/scan.php:2155
+#: lib/scan.php:2171 lib/scan.php:2217
 msgid "No valid signatures found"
 msgstr "Aucune signature valide n'a été trouvée dans ce fichier"
 
-#: lib/scan.php:2116
-msgid "Skipping anti-malware scan"
-msgstr "Annulation du scan anti-malware"
+#: lib/scan.php:2178
+msgid "Skipping malware scan"
+msgstr "Annulation du scanner de malware"
 
-#: lib/scan.php:2148
+#: lib/scan.php:2210
 msgid "Files list array seems corrupted"
 msgstr "Le tableau de la liste des fichiers semble corrompu"
 
-#: lib/scan.php:2163
+#: lib/scan.php:2223
+msgid "Signatures list is empty"
+msgstr "La liste des signatures intégrées est vide"
+
+#: lib/scan.php:2226
 msgid "items scanned:"
 msgstr "éléments analysés :"
 
-#: lib/scan.php:2206
+#: lib/scan.php:2269
 #, php-format
 msgid "File does not exist, ignoring it: %s"
 msgstr "Le fichier n'existe pas : %s"
 
-#: lib/scan.php:2230 lib/scan.php:2239
+#: lib/scan.php:2293 lib/scan.php:2302
 #, php-format
 msgid "Potentially unsafe files: %s"
 msgstr "Fichiers potentiellement dangereux : %s"
 
-#: lib/scan.php:2252
+#: lib/scan.php:2315
 #, php-format
 msgid "Cannot open %s, skipping it"
 msgstr "Impossible d'ouvir %s, annulation de cette opération"
 
-#: lib/scan.php:2263
+#: lib/scan.php:2326
 #, php-format
 msgid "Scanned files: %s/%s"
 msgstr "Fichiers analysés : %s/%s"
 
-#: lib/scan.php:2272
+#: lib/scan.php:2335
 #, php-format
 msgid "Total potentially unsafe files: %s"
 msgstr "Nombre de fichiers potentiellement dangereux : %s"
 
-#: lib/scan.php:2277
+#: lib/scan.php:2340
 #, php-format
 msgid "No suspicious file detected (%s files checked)"
 msgstr "Aucun fichier suspect détecté (%s fichiers vérifiés)"
 
-#: lib/scan.php:2301
+#: lib/scan.php:2364
 msgid "Checking built-in signatures list"
 msgstr "Vérification de la liste des signatures intégrées"
 
-#: lib/scan.php:2312
+#: lib/scan.php:2375
 msgid "Local copy is too old, deleting it"
 msgstr "Suppression de la copie locale, elle est trop ancienne"
 
-#: lib/scan.php:2317
+#: lib/scan.php:2380
 msgid "Downloading the latest version"
 msgstr "Téléchargement de la dernière version"
 
-#: lib/scan.php:2357
+#: lib/scan.php:2420
 #, php-format
 msgid ""
 "The signatures list is either corrupted or empty. Try again later (error %s)"
@@ -2736,11 +2741,11 @@ msgstr ""
 "La liste des signatures est corrompue ou vide. Réessayez plus tard (erreur "
 "%s)"
 
-#: lib/scan.php:2367
+#: lib/scan.php:2430
 msgid "Verifying digital signature with public key"
 msgstr "Vérification de la signature numérique avec la clé plublique"
 
-#: lib/scan.php:2372
+#: lib/scan.php:2435
 msgid ""
 "The digital signature is not correct. Aborting update, rules may have been "
 "tampered with."
@@ -2748,81 +2753,81 @@ msgstr ""
 "La signature numérique n'est pas correcte. Annulation de la mise à jour, les "
 "règles ont peut-être été altérées."
 
-#: lib/scan.php:2386
+#: lib/scan.php:2449
 #, php-format
 msgid "HTTP Error %s. Cannot download signatures list. Try again later"
 msgstr ""
 "Erreur HTTP %s. Impossible de télécharger la liste des signatures. Réessayez "
 "plus tard"
 
-#: lib/scan.php:2397
+#: lib/scan.php:2460
 #, php-format
 msgid "%s. Cannot download built-in signatures list. Try again later"
 msgstr ""
 "%s. Impossible de télécharger la liste des signatures. Réessayez plus tard"
 
-#: lib/scan.php:2414
+#: lib/scan.php:2477
 #, php-format
 msgid "Cannot find %s, skipping it"
 msgstr "Impossible de trouver %s, annulation de cette opération"
 
-#: lib/scan.php:2422
+#: lib/scan.php:2485
 #, php-format
 msgid "Cannot open/read %s, skipping it"
 msgstr "Impossible d'ouvir et lire %s, annulation de cette opération"
 
-#: lib/scan.php:2428
+#: lib/scan.php:2491
 msgid "Verifying signatures"
 msgstr "Vérification des signatures"
 
-#: lib/scan.php:2450
+#: lib/scan.php:2513
 #, php-format
 msgid "Verified signatures: %s"
 msgstr "Signatures vérifiées : %s"
 
-#: lib/scan.php:2456
+#: lib/scan.php:2519
 msgid "No valid signatures found in that file, skipping it."
 msgstr "Aucune signature valide n'a été trouvée dans ce fichier."
 
-#: lib/scan.php:2475
+#: lib/scan.php:2538
 #, php-format
 msgid "REX signature syntax error, skipping it: %s"
 msgstr "Erreur de syntaxe, signature ignorée : %s"
 
-#: lib/scan.php:2483
+#: lib/scan.php:2546
 #, php-format
 msgid "HEX signature syntax error, skipping it: %s"
 msgstr "Erreur de syntaxe, signature ignorée : %s"
 
-#: lib/scan.php:2502
+#: lib/scan.php:2565
 msgid "Searching for binary files"
 msgstr "Recherche de fichiers exécutables"
 
-#: lib/scan.php:2523
+#: lib/scan.php:2586
 #, php-format
 msgid "Executable files found: %s"
 msgstr "Fichiers exécutables : %s"
 
-#: lib/scan.php:2527
+#: lib/scan.php:2590
 msgid "No binary file found"
 msgstr "Aucun fichiers exécutables trouvé"
 
-#: lib/scan.php:2531
+#: lib/scan.php:2594
 msgid "Skipping binary files scan"
 msgstr "Annulation de la recherche de fichiers exécutables"
 
-#: lib/scan.php:2556
+#: lib/scan.php:2619
 msgid "Performing various checks"
 msgstr "Vérifications diverses"
 
-#: lib/scan.php:2593
+#: lib/scan.php:2656
 #, php-format
 msgid "Found %s ghost admin user"
 msgid_plural "Found %s ghost admin users"
 msgstr[0] "%s Administrateur fantôme a été détecté"
 msgstr[1] "%s Administrateurs fantômes ont été détectés"
 
-#: lib/scan.php:2616
+#: lib/scan.php:2679
 #, php-format
 msgid "Found %s SSH key in user home folder"
 msgid_plural "Found %s SSH keys in user home folder"
@@ -2831,53 +2836,43 @@ msgstr[0] ""
 msgstr[1] ""
 "%s clefs SSH ont été trouvées dans le dossier personnel de l'utilisateur"
 
-#: lib/scan.php:2632
+#: lib/scan.php:2695
 msgid "All New Registered users have administrator role"
 msgstr ""
 "L'inscription est activée et l'option \"Rôle par défaut de tout nouvel "
 "utilisateur\" est activée sur \"Administrateur\""
 
-#: lib/scan.php:2636
+#: lib/scan.php:2699
 msgid "New User Default Role is set to \"administrator\""
 msgstr ""
 "L'option \"Rôle par défaut de tout nouvel utilisateur\" est activée sur "
 "\"Administrator\""
 
-#: lib/scan.php:2682
+#: lib/scan.php:2745
 #, php-format
 msgid "Found user roles with administrator capabilities: %s"
 msgstr "Rôles utilisateur dotés de Capacités administrateur détectés : %s"
 
-#: lib/tab_about.php:27
+#: lib/tab_about.php:20
+msgid "A lightweight, fast and powerful virus scanner for WordPress."
+msgstr "Un antivirus léger, rapide et puissant pour WordPress."
+
+#: lib/tab_about.php:30
 #, php-format
 msgid ""
 "<strong>Need more security?</strong> Check out <a href=\"%s\">NinjaFirewall "
 "(WP Edition)</a>, our Web Application Firewall for WordPress. It will give "
 "your blog the highest level of protection it deserves, no less!"
 msgstr ""
-"<strong>Besoin de plus de sécurité ?</strong> Venez découvrir <a href=\"%s"
-"\">NinjaFirewall (WP Edition)</a>, notre pare-feu applicatif, pour offrir la "
-"protection ultime à votre WordPress !"
+"<strong>Besoin de plus de sécurité ?</strong> Venez découvrir <a "
+"href=\"%s\">NinjaFirewall (WP Edition)</a>, notre pare-feu applicatif, pour "
+"offrir la protection ultime à votre WordPress !"
 
-#: lib/tab_about.php:28
-#, php-format
-msgid ""
-"<strong>Hacked? We're here to help:</strong> <a href=\"%s\">our malware "
-"removal service</a> will help you clean up your hacked website and will "
-"ensure it gets safely and promptly back online."
-msgstr ""
-"Votre site a été piraté ? Nous pouvons vous aider avec <a href=\"%s\">notre "
-"service de nettoyage de sites</a>."
-
-#: lib/tab_about.php:29
-msgid "Our blog:"
-msgstr "Notre blog :"
-
-#: lib/tab_about.php:30
+#: lib/tab_about.php:31
 msgid "GDPR Compliance"
 msgstr "Conformité RGPD"
 
-#: lib/tab_about.php:31
+#: lib/tab_about.php:32
 msgid ""
 "Stay informed about the latest vulnerabilities in WordPress plugins and "
 "themes:"
@@ -2885,7 +2880,7 @@ msgstr ""
 "Soyez informé des dernières vulnérabilités dans les extensions et thèmes de "
 "WordPress :"
 
-#: lib/tab_about.php:32
+#: lib/tab_about.php:33
 msgid "Rate NinjaScanner on WordPress.org!"
 msgstr "Notez NinjaScanner sur WordPress.org !"
 
@@ -2908,6 +2903,14 @@ msgid ""
 msgstr ""
 "Les fichiers resteront dans la liste jusqu'à ce qu'ils soient modifiés ou "
 "supprimés manuellement."
+
+#: lib/tab_log.php:89
+msgid "Info"
+msgstr "Info"
+
+#: lib/tab_log.php:104
+msgid "Debug"
+msgstr "Débogage"
 
 #: lib/tab_premium.php:59
 #, php-format
@@ -3067,8 +3070,8 @@ msgid ""
 "\"Summary\" tab."
 msgstr ""
 "Une analyse est en cours en arrière-plan, les paramètres ne peuvent pas être "
-"modifiés. Attendez la fin du processus ou annulez-le dans l'onglet \"Sommaire"
-"\"."
+"modifiés. Attendez la fin du processus ou annulez-le dans l'onglet "
+"\"Sommaire\"."
 
 #: lib/tab_settings.php:52
 msgid "The cache was cleared."
@@ -3110,6 +3113,14 @@ msgid "Case-sensitive string. Multiple values must be comma-separated."
 msgstr ""
 "Chaîne de caractères sensible à la casse. Plusieurs valeurs doivent être "
 "séparées par des virgules."
+
+#: lib/tab_settings.php:203
+msgid ""
+"Apply the exclusion list to the file integrity checker (WordPress, themes "
+"and plugins)"
+msgstr ""
+"Appliquer la liste d'exclusion au contrôle de l'intégrité des fichiers "
+"(thèmes et plugins)"
 
 #: lib/tab_settings.php:224
 msgid ""
@@ -3381,49 +3392,49 @@ msgstr "À Propos"
 msgid "Click on the above \"Help\" tab for help."
 msgstr "Pour obtenir de l'aide, cliquez sur l'onglet \"Aide\" ci-dessus."
 
-#: lib/utils.php:55
+#: lib/utils.php:64
 #, php-format
 msgid "Directory path does not match NSCAN_CACHEDIR: %s"
 msgstr "Le chemin de répertoire ne correspond pas à NSCAN_CACHEDIR : %s"
 
-#: lib/utils.php:114 lib/utils.php:205
+#: lib/utils.php:124 lib/utils.php:221
 msgid "Scan was cancelled."
 msgstr "L’analyse a été annulée."
 
-#: lib/utils.php:119
+#: lib/utils.php:129
 msgid "Missing lock file."
 msgstr "Impossible de trouver le fichier de verrouillage."
 
-#: lib/utils.php:180
+#: lib/utils.php:191
 #, php-format
 msgid "Cancelling scanning process (%s)"
 msgstr "Annulation du processus d'analyse (%s)"
 
-#: lib/utils.php:188
+#: lib/utils.php:203
 msgid "Scan cancelled"
 msgstr "Analyse annulée"
 
-#: lib/utils.php:254
+#: lib/utils.php:288
 msgid "Security nonces do not match."
 msgstr "Erreur : Les nonces de sécurité ne correspondent pas."
 
-#: lib/utils.php:272
+#: lib/utils.php:306
 #, php-format
 msgid "File does not seem valid: %s"
 msgstr "Le fichier ne semble pas être valide : %s"
 
-#: lib/utils.php:290
+#: lib/utils.php:324
 #, php-format
 msgid "Security keys do not match (#%s). Try to reload this page."
 msgstr ""
 "Les nonces de sécurité ne correspondent pas (#%s). Essayez de recharger "
 "cette page."
 
-#: lib/utils.php:364
+#: lib/utils.php:398
 msgid "Error: You do not have a Premium license."
 msgstr "Erreur : Vous ne possédez pas de license Premium."
 
-#: lib/utils.php:391
+#: lib/utils.php:425
 msgid ""
 "An unknown error occurred while connecting to NinjaScanner API server. "
 "Please try again in a few minutes."
@@ -3431,30 +3442,29 @@ msgstr ""
 "Une erreur inconnue s'est produite lors de la connexion au serveur API de "
 "NinjaScanner. Veuillez réessayez dans quelques minutes."
 
-#: lib/utils.php:402
+#: lib/utils.php:436
 #, php-format
 msgid "Error: Your license is not valid (#%s)."
 msgstr "Erreur : Votre licence n'est pas valide (#%s)."
 
-#: lib/utils.php:408
+#: lib/utils.php:442
 msgid "You have a valid license"
 msgstr "Votre licence est valide"
 
-#: lib/utils.php:414
+#: lib/utils.php:448
 #, php-format
 msgid "HTTP Error (%s): Cannot connect to the API server. Try again later"
 msgstr ""
 "Erreur HTTP (%s) : Impossible de se connecter au serveur API. Veuillez "
 "réessayer plus tard"
 
-#: lib/utils.php:422
-#, php-format
-msgid "Error (%s): Cannot connect to the API server. Try again later"
+#: lib/utils.php:455
+msgid "Error: Cannot connect to the API server. Try again later"
 msgstr ""
-"Erreur (%s) : Impossible de se connecter au serveur API. Veuillez réessayer "
-"plus tard"
+"Erreur : Impossible de se connecter au serveur API. Veuillez réessayer plus "
+"tard"
 
-#: lib/utils.php:456
+#: lib/utils.php:487
 #, php-format
 msgid ""
 "Cannot start the scan! More details may be available in the scanner log: %s"
@@ -3462,11 +3472,11 @@ msgstr ""
 "Impossible de démarrer l'analyse. Plus de détails peuvent être disponibles "
 "dans le journal du scanner : %s"
 
-#: lib/utils.php:465
+#: lib/utils.php:496
 msgid "[NinjaScanner] Scan error"
 msgstr "[NinjaScanner] Erreur d'analyse"
 
-#: lib/utils.php:466
+#: lib/utils.php:497
 #, php-format
 msgid "A fatal error occurred while running NinjaScanner: %s."
 msgstr "Une erreur fatale s'est produite lors de l'analyse : %s."
@@ -3478,6 +3488,39 @@ msgstr "Fichier original"
 #: lib/vendor/diff/Diff/Renderer/Html/SideBySide.php:68
 msgid "Your file"
 msgstr "Votre fichier"
+
+#~ msgid "A lightweight, fast and powerful antivirus scanner for WordPress."
+#~ msgstr "Un scanner antivirus léger, rapide et puissant pour WordPress."
+
+#~ msgid "Viewing:"
+#~ msgstr "Fichier :"
+
+#~ msgid "Access:"
+#~ msgstr "Accès:"
+
+#~ msgid "Running anti-malware scanner"
+#~ msgstr "Exécution du scanner anti-malware"
+
+#~ msgid "Skipping anti-malware scan"
+#~ msgstr "Annulation du scan anti-malware"
+
+#, php-format
+#~ msgid ""
+#~ "<strong>Hacked? We're here to help:</strong> <a href=\"%s\">our malware "
+#~ "removal service</a> will help you clean up your hacked website and will "
+#~ "ensure it gets safely and promptly back online."
+#~ msgstr ""
+#~ "Votre site a été piraté ? Nous pouvons vous aider avec <a "
+#~ "href=\"%s\">notre service de nettoyage de sites</a>."
+
+#~ msgid "Our blog:"
+#~ msgstr "Notre blog :"
+
+#, php-format
+#~ msgid "Error (%s): Cannot connect to the API server. Try again later"
+#~ msgstr ""
+#~ "Erreur (%s) : Impossible de se connecter au serveur API. Veuillez "
+#~ "réessayer plus tard"
 
 #~ msgid "Missing % value. Exiting scanning process"
 #~ msgstr "Valeur manquante (%s). Arrêt du processus d'analyse"
@@ -3965,10 +4008,10 @@ msgstr "Votre fichier"
 #~ msgstr ""
 #~ "Les thèmes suivants n'ont pas pu être comparés aux fichiers originaux "
 #~ "pour une raison quelconque (plus d'information peut être disponible dans "
-#~ "<a href=\"%s\">le journal</a>). Si ce sont des thèmes Premium, <a href="
-#~ "\"%s\">consultez notre blog</a> pour savoir comment les inclure dans le "
-#~ "contrôle d'intégrité des fichiers. Assurez-vous que ces thèmes n'ont pas "
-#~ "été altérés ou installés par quelqu'un d'autre :"
+#~ "<a href=\"%s\">le journal</a>). Si ce sont des thèmes Premium, <a "
+#~ "href=\"%s\">consultez notre blog</a> pour savoir comment les inclure dans "
+#~ "le contrôle d'intégrité des fichiers. Assurez-vous que ces thèmes n'ont "
+#~ "pas été altérés ou installés par quelqu'un d'autre :"
 
 #~ msgid "Malware and phishing diagnostic"
 #~ msgstr "Malware et diagnostic de phishing"
@@ -4046,13 +4089,13 @@ msgstr "Votre fichier"
 #~ msgstr "Pare-feu"
 
 #~ msgid ""
-#~ "Consider installing a Web Application Firewall such as <a href=\"%s"
-#~ "\">NinjaFirewall (WP Edition)</a> to make sure your site is well "
+#~ "Consider installing a Web Application Firewall such as <a "
+#~ "href=\"%s\">NinjaFirewall (WP Edition)</a> to make sure your site is well "
 #~ "protected against web attacks."
 #~ msgstr ""
-#~ "Envisagez l'installation d'un pare-feu applicatif comme <a href=\"%s"
-#~ "\">NinjaFirewall (WP Edition)</a> pour bien protéger votre site contre "
-#~ "les attaques Web."
+#~ "Envisagez l'installation d'un pare-feu applicatif comme <a "
+#~ "href=\"%s\">NinjaFirewall (WP Edition)</a> pour bien protéger votre site "
+#~ "contre les attaques Web."
 
 #~ msgid "System"
 #~ msgstr "Système"
@@ -4127,8 +4170,8 @@ msgstr "Votre fichier"
 #~ msgstr "NinjaScanner ne peut pas écrire dans le répertoire <code>%s</code>."
 
 #~ msgid ""
-#~ "Error: Cannot start the scan. More details may be available in <a href="
-#~ "\"%s\">the scanner log</a>."
+#~ "Error: Cannot start the scan. More details may be available in <a "
+#~ "href=\"%s\">the scanner log</a>."
 #~ msgstr ""
 #~ "Erreur : impossible de démarrer l'analyse. Plus de détails peuvent être "
 #~ "disponibles dans <a href=\"%s\">le journal du scanner</a>."
