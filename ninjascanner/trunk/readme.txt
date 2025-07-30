@@ -109,7 +109,7 @@ Check out our [NinjaScanner Premium Edition](https://nintechnet.com/ninjascanner
 
 = 3.2.6 =
 
-* Administrators can only move to the quarantine folder a file that was flagged as suspicious by the scanner (props Jonas Benjamin Friedli).
+* Administrators can only move to the quarantine folder a file that was flagged as suspicious by the scanner (props Wordfence).
 
 = 3.2.5 =
 
