@@ -29,7 +29,7 @@ $i18n = __('A lightweight, fast and powerful virus scanner for WordPress.', 'nin
 	<ul style="list-style: disc;">
 		<li><?php printf( __('<strong>Need more security?</strong> Check out <a href="%s">NinjaFirewall (WP Edition)</a>, our Web Application Firewall for WordPress. It will give your blog the highest level of protection it deserves, no less!', 'ninjascanner'), 'https://nintechnet.com/ninjafirewall/wp-edition/' ) ?> </li>
 		<li><a href="https://wordpress.org/support/topic/ninjascanner-and-the-general-data-protection-regulation-gdpr/"><?php _e('GDPR Compliance', 'ninjascanner') ?></a></li>
-		<li><?php _e('Stay informed about the latest vulnerabilities in WordPress plugins and themes:', 'ninjascanner') ?> <a href="https://twitter.com/nintechnet">https://twitter.com/nintechnet</a></li>
+		<li><?php _e('Stay informed about the latest vulnerabilities in WordPress plugins and themes:', 'ninjascanner') ?> <a href="https://x.com/nintechnet">https://x.com/nintechnet</a></li>
 		<li><a href="https://wordpress.org/support/view/plugin-reviews/ninjascanner?rate=5#postform"><?php _e('Rate NinjaScanner on WordPress.org!', 'ninjascanner') ?></a> <img style="vertical-align:middle" src="<?php echo plugins_url() ?>/ninjascanner/static/rate.png" /></li>
 	</ul>
 	</font>

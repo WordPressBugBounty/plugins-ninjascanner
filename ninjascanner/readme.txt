@@ -2,8 +2,8 @@
 Contributors: nintechnet, bruandet
 Tags: malware, virus, security, protection, scanner
 Requires at least: 4.7.0
-Tested up to: 6.8
-Stable tag: 3.2.6
+Tested up to: 6.9
+Stable tag: 3.2.8
 License: GPLv3 or later
 Requires PHP: 7.1
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -106,6 +106,14 @@ Check out our [NinjaScanner Premium Edition](https://nintechnet.com/ninjascanner
 9. Integration with NinjaFirewall.
 
 == Changelog ==
+
+= 3.2.8 =
+
+* Fixed a bug where it was not possible to compare two files.
+
+= 3.2.7 =
+
+* Fixed a potential "stat failed" PHP warning when viewing a report.
 
 = 3.2.6 =
 

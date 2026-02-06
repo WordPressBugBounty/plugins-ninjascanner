@@ -1565,7 +1565,6 @@ function ns_build_rows( $files_list, $id, $table_name ) {
 		}
 		$encoded_name = base64_encode( $file );
 		$unique_id = uniqid( "$id-" );
-		$fileinode = sha1( AUTH_KEY . fileinode( $file ) );
 
 		// ===============================================================
 		$title_info = __('Display info about this file.', 'ninjascanner');
@@ -1623,7 +1622,11 @@ function ns_build_rows( $files_list, $id, $table_name ) {
 			</tr>
 			';
 			continue;
+		} else {
+
+			$fileinode = sha1( AUTH_KEY . $file_stats[7] );
 		}
+
 NO_STATS:
 
 		// ===============================================================
@@ -1646,7 +1649,7 @@ NO_STATS:
 						<label class="ns-label-menu '. NSCAN_ROW_ACTIONS .'">
 							<a onClick="nscanjs_file_info('. "'{$unique_id}','{$table_name}'" .')" title="'. $title_info .'">'. $file_info .'</a> |
 							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','view','{$nonce}','{$unique_id}','{$table_name}','','$fileinode'" .')" title="'. $title_view .'">'. $file_view .'</a> |
-							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','compare','{$nonce}','{$unique_id}','{$table_name}'" .')" title="'. $title_compare .'">'. $file_changes .'</a> |
+							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','compare','{$nonce}','{$unique_id}','{$table_name}','','$fileinode'" .')" title="'. $title_compare .'">'. $file_changes .'</a> |
 							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','restore','{$nonce}','{$unique_id}','{$table_name}'" .')" title="'. $title_restore .'">'. $file_restore .'</a> |
 							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','ignore','{$nonce}','{$unique_id}','{$table_name}'" .')" title="'. $title_ignore .'">'. $file_ignore .'</a>
 						</label>
@@ -1789,7 +1792,7 @@ NO_STATS:
 						<label class="ns-label-menu '. NSCAN_ROW_ACTIONS .'">
 							<a onClick="nscanjs_file_info('. "'{$unique_id}','{$table_name}'" .')" title="'. $title_info .'">'. $file_info .'</a> |
 							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','view','{$nonce}','{$unique_id}','{$table_name}','','$fileinode'" .')" title="'. $title_view .'">'. $file_view .'</a> |
-							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','compare','{$nonce}','{$unique_id}','{$table_name}'" .')" title="'. $title_compare .'">'. $file_changes .'</a> |
+							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','compare','{$nonce}','{$unique_id}','{$table_name}','','$fileinode'" .')" title="'. $title_compare .'">'. $file_changes .'</a> |
 							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','restore','{$nonce}','{$unique_id}','{$table_name}'" .')" title="'. $title_restore .'">'. $file_restore .'</a> |
 							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','ignore','{$nonce}','{$unique_id}','{$table_name}'" .')" title="'. $title_ignore .'">'. $file_ignore .'</a>
 						</label>
@@ -1976,7 +1979,7 @@ NO_STATS:
 						<label class="ns-label-menu '. NSCAN_ROW_ACTIONS .'">
 							<a onClick="nscanjs_file_info('. "'{$unique_id}','{$table_name}'" .')" title="'. $title_info .'">'. $file_info .'</a> |
 							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','view','{$nonce}','{$unique_id}','{$table_name}','','$fileinode'" .')" title="'. $title_view .'">'. $file_view .'</a> |
-							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','compare','{$nonce}','{$unique_id}','{$table_name}'" .')" title="'. $title_compare .'">'. $file_changes .'</a> |
+							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','compare','{$nonce}','{$unique_id}','{$table_name}','','$fileinode'" .')" title="'. $title_compare .'">'. $file_changes .'</a> |
 							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','restore','{$nonce}','{$unique_id}','{$table_name}'" .')" title="'. $title_restore .'">'. $file_restore .'</a> |
 							<a onClick="nscanjs_file_operation('. "'{$encoded_name}','ignore','{$nonce}','{$unique_id}','{$table_name}'" .')" title="'. $title_ignore .'">'. $file_ignore .'</a>
 						</label>
@@ -2369,6 +2372,8 @@ function nscan_get_file_stats( $file ) {
 	if ( is_link( $file ) ) {
 		$file_stats[6] = readlink( $file );
 	}
+
+	$file_stats[7] = $stat['ino'];
 
 	return $file_stats;
 }
