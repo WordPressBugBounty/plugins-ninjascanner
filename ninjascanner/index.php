@@ -5,14 +5,14 @@ Plugin URI: https://nintechnet.com/ninjascanner/
 Description: A lightweight, fast and powerful virus scanner for WordPress.
 Author: The Ninja Technologies Network
 Author URI: https://nintechnet.com/
-Version: 3.2.8
+Version: 3.3
 License: GPLv3 or later
 Network: true
 Text Domain: ninjascanner
 Domain Path: /languages
 */
 
-define('NSCAN_VERSION', '3.2.8');
+define('NSCAN_VERSION', '3.3');
 
 /*
  +=====================================================================+

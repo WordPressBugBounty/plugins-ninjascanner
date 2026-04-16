@@ -667,7 +667,9 @@ function nscan_save_settings( $nscan_options ) {
 	}
 
 	// Max file size (value:numeric characters only):
-	if (! isset( $_POST['nscan_options']['scan_size'] ) || ! preg_match( '/^\d+$/', $_POST['nscan_options']['scan_size'] ) ) {
+	if (! isset( $_POST['nscan_options']['scan_size'] ) ||
+		! preg_match( '/^\d+$/', $_POST['nscan_options']['scan_size'] ) ) {
+
 		$nscan_options['scan_size'] = 1024;
 	} else {
 		$nscan_options['scan_size'] = (int)$_POST['nscan_options']['scan_size'];

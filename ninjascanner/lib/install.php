@@ -28,8 +28,9 @@ function nscan_default_settings( $key = null, $exp = null ) {
 	$signatures = array ( "lmd" );
 
 	$nscan_options = array(
-		'scan_size'						=>	1024,
-		'scan_extensions'				=>	'',
+		'scan_size'						=>	200,
+		'scan_extensions'				=>	'["po","pot","mo","css","png","jpg","gif","tiff","xml","json",'.
+												'"woff","woff2","ttf","eot","yaml","svg","txt","webp","zip","gz","tar"]',
 		'scan_folders'					=>	json_encode( $excluded_folders ),
 		'scan_root_folders'			=> '',
 		'scan_folders_fic'			=>	0,
@@ -56,7 +57,7 @@ function nscan_default_settings( $key = null, $exp = null ) {
 		'table_rows'					=>	6,
 		'highlight'						=>	1,
 		'show_path'						=>	0,
-		'scan_checksum'				=>	2,
+		'scan_checksum'				=>	1,
 		'scan_debug_log'				=>	1,
 		'scan_garbage_collector'	=>	1,
 		'sandbox'						=>	1,

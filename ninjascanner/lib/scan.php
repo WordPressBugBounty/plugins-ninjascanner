@@ -671,6 +671,19 @@ function _nscan_check_wordpress( $lock_status ) {
 	}
 	nscan_log_debug( sprintf( __('Using %s algo', 'ninjascanner'), $algo ) );
 
+	// Build the files/folders exclusion list
+	$excluded_folders = '';
+	if (! empty( $nscan_options['scan_folders'] ) && ! empty( $nscan_options['scan_folders_fic'] ) ) {
+		$folders = json_decode( $nscan_options['scan_folders'], true );
+		if ( is_array( $folders ) ) {
+			foreach( $folders as $folder ) {
+				$excluded_folders .= preg_quote( $folder ) . '|';
+			}
+			$excluded_folders = rtrim( $excluded_folders , '|' );
+			nscan_log_debug( __('Creating files/folders exclusion list', 'ninjascanner') );
+		}
+	}
+
 	// Compare local files with archive files:
 	foreach( $zip_files_list as $file => $checksum ) {
 
@@ -692,6 +705,25 @@ function _nscan_check_wordpress( $lock_status ) {
 
 		// Make sure the file exists:
 		if ( isset( $snapshot['abspath'][$tmpfile] ) ) {
+			/**
+			 * Ignore the file if it is in the exclusion list (since v3.3).
+			 */
+			if ( $excluded_folders && preg_match( "`$excluded_folders`i", $tmpfile ) ) {
+				nscan_log_debug(
+					sprintf(
+						__('Ignoring [%s], it is in the file and folder exclusion list', 'ninjascanner'),
+						$tmpfile
+					)
+				);
+				/**
+				 * Clear it from all snapshot lists.
+				 */
+				unset( $snapshot['abspath'][$tmpfile] );
+				unset( $snapshot['core_unknown_root'][$tmpfile] );
+				unset( $snapshot['core_unknown'][ $tmpfile ] );
+				continue;
+			}
+
 			$local_file = hash_file( $algo, $tmpfile );
 			$original_file = hash_file( $algo, NSCAN_CACHEDIR ."/$wp_version/wordpress/$file" );
 
@@ -719,19 +751,6 @@ function _nscan_check_wordpress( $lock_status ) {
 	// Remove the extracted files/directories:
 	nscan_remove_dir( NSCAN_CACHEDIR ."/$wp_version" );
 
-
-	// Build the files/folders exclusion list
-	$excluded_folders = '';
-	if (! empty( $nscan_options['scan_folders'] ) && ! empty( $nscan_options['scan_folders_fic'] ) ) {
-		$folders = json_decode( $nscan_options['scan_folders'], true );
-		if ( is_array( $folders ) ) {
-			foreach( $folders as $folder ) {
-				$excluded_folders .= preg_quote( $folder ) . '|';
-			}
-			$excluded_folders = rtrim( $excluded_folders , '|' );
-			nscan_log_debug( __('Creating files/folders exclusion list', 'ninjascanner') );
-		}
-	}
 	// Remove unknow file that are in the exclusion list
 	if ( $excluded_folders ) {
 		foreach( $snapshot['core_unknown_root'] as $n => $t ) {
@@ -1196,6 +1215,22 @@ function nscan_check_plugins( $lock_status ) {
 	// (i.e., if they are available on wordpress.org)
 	$unknown_count = 0;
 	foreach( $nscan_plugins_list['plugins'] as $slug => $version ) {
+		/**
+		 * Ignore the plugin if it is in the exclusion list (since v3.3).
+		 */
+		if ( $excluded_folders && preg_match( "`$excluded_folders`i", WP_PLUGIN_DIR ."/$slug/" ) ) {
+			nscan_log_debug(
+				sprintf(
+					__('Ignoring [%s], it is in the file and folder exclusion list', 'ninjascanner'),
+					$slug
+				)
+			);
+			/**
+			 * Clear it from the snapshot list.
+			 */
+			unset( $snapshot['plugins'][$slug] );
+			continue;
+		}
 
 		nscan_is_scan_cancelled();
 
@@ -1447,9 +1482,25 @@ function nscan_check_themes( $lock_status ) {
 	@unlink( NSCAN_TMP_LIST );
 
 	// Let's check their integrity if possible
-	// (i.e., they are available at wordpress.org)
+	// (i.e., if they are available at wordpress.org)
 	$unknown_count = 0;
 	foreach( $nscan_themes_list['themes'] as $slug => $version ) {
+		/**
+		 * Ignore the theme if it is in the exclusion list (since v3.3).
+		 */
+		if ( $excluded_folders && preg_match( "`$excluded_folders`i", WP_CONTENT_DIR ."/themes/$slug/" ) ) {
+			nscan_log_debug(
+				sprintf(
+					__('Ignoring [%s], it is in the file and folder exclusion list', 'ninjascanner'),
+					$slug
+				)
+			);
+			/**
+			 * Clear it from the snapshot list.
+			 */
+			unset( $snapshot['themes'][$slug] );
+			continue;
+		}
 
 		nscan_is_scan_cancelled();
 
